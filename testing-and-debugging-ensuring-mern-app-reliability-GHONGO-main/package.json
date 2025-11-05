@@ -1,0 +1,40 @@
+{
+  "name": "mern-testing",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Testing and Debugging MERN Applications - Week 6 Assignment",
+  "scripts": {
+    "install-all": "npm install",
+    "test": "jest",
+    "test:unit": "jest --selectProjects=server,client --coverage --runInBand",
+    "test:integration": "jest --selectProjects=server --testPathPattern=server/tests/integration --runInBand",
+    "test:e2e": "cypress run --config-file client/cypress.config.js",
+    "e2e:open": "cypress open --config-file client/cypress.config.js",
+    "setup-test-db": "echo 'Using mongodb-memory-server for tests; no external DB setup required' && exit 0"
+  },
+  "jest": {
+    "preset": null
+  },
+  "devDependencies": {
+    "@babel/core": "^7.25.0",
+    "@babel/preset-env": "^7.25.0",
+    "@babel/preset-react": "^7.24.7",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.0.0",
+    "babel-jest": "^29.7.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0",
+    "cypress": "^13.14.2"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.21.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb-memory-server": "^10.1.4",
+    "mongoose": "^8.8.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}
+
