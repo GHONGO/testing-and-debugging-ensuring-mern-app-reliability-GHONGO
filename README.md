@@ -1,3 +1,6 @@
+**Please note this project is still ongoing
+
+
 # Testing and Debugging MERN Applications
 
 This assignment focuses on implementing comprehensive testing strategies for a MERN stack application, including unit testing, integration testing, and end-to-end testing, along with debugging techniques.
